@@ -1,0 +1,7 @@
+# .htaccess-Datei für Web-Verzeichnis /download
+AuthType Basic
+AuthName "Download-Bereich"
+AuthUserFile /volume1/web/.htusers
+#AuthGroupFile /volume1/web/.htgroups
+Require user  Nauroth Gergeleit
+
