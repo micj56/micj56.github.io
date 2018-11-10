@@ -1,0 +1,12 @@
+#!/bin/sh
+
+SPL=../Loesungen/Aufgabe7/spl
+ASLD=/home/eco/eco32/work/eco32-0.4/build/bin/asld
+SIM=/home/eco/eco32/work/eco32-0.4/build/bin/sim
+
+SRC=$1.spl
+ASM=$1.asm
+BIN=$1.bin
+MAP=$1.map
+
+$SIM -i -l $BIN

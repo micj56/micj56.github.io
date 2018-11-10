@@ -1,0 +1,14 @@
+//
+// echo.spl -- terminal echo
+//
+
+
+proc main() {
+  var c: int;
+
+  c := 0;
+  while (c # '0') {
+    readc(c);
+    printc(c);
+  }
+}

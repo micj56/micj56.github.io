@@ -1,0 +1,16 @@
+//
+// test5.spl -- Aufgabenblatt 2, Testprogramm e)
+//
+
+
+proc main() {
+  clearAll(0x00808080);
+  drawLine(220, 440, 420, 440, 0x00000000);
+  drawLine(220, 240, 420, 240, 0x000000FF);
+  drawLine(220, 440, 220, 240, 0x0000FF00);
+  drawLine(420, 440, 420, 240, 0x0000FFFF);
+  drawLine(220, 440, 420, 240, 0x00FF0000);
+  drawLine(220, 240, 420, 440, 0x00FF00FF);
+  drawLine(220, 240, 320,  80, 0x00FFFF00);
+  drawLine(420, 240, 320,  80, 0x00FFFFFF);
+}

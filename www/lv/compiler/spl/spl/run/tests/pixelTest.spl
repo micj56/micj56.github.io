@@ -1,0 +1,18 @@
+//
+// pixelTest.spl -- set four pixels in the middle of the graphics screen
+//
+
+
+proc main() {
+  var x: int;
+  var y: int;
+  var color: int;
+
+  y := 240;
+  x := 320;
+  color := 0x000000FF;
+  setPixel(x, y, color);
+  setPixel(x - 1, y, color);
+  setPixel(x, y - 1, color);
+  setPixel(x - 1, y - 1, color);
+}

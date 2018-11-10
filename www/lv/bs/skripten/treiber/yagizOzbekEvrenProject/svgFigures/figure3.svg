@@ -1,0 +1,19 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" height="200" width="100" y="104.199999" x="163.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_3" height="50" width="100" y="254.199999" x="293.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#BBBBBB"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_4" y="305.199999" x="152.299999" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">0</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_5" y="112.199999" x="111.299999" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">0xFFFF...</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_6" y="70.199999" x="239.299999" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">Two addresses</text>
+  <path id="svg_8" d="m422.608224,280.96956l-18.087773,-22.00001l11.912226,0l18.087773,22.00001l-18.087773,21.999992l-11.912226,0l18.087773,-21.999992z" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <path transform="rotate(179.58465576171875 129.52044677734375,280.9925231933593) " stroke="#000000" id="svg_9" d="m132.608224,280.99254l-18.087773,-22.00001l11.912226,0l18.087773,22.00001l-18.087773,21.999993l-11.912226,0l18.087773,-21.999993z" stroke-opacity="null" stroke-width="null" fill="#BBBBBB"/>
+  <text stroke="#000000" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_10" y="285.199999" x="51.299999" stroke-opacity="null" stroke-width="0" fill="#000000">Memory</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_11" y="285.199999" x="449.299999" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">IO Ports</text>
+ </g>
+</svg>

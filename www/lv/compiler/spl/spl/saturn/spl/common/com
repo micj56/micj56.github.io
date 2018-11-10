@@ -1,0 +1,9 @@
+#!/bin/sh
+
+SRC=$1.spl
+ASM=$1.asm
+BIN=$1.bin
+MAP=$1.map
+
+./spl $SRC $ASM
+./asld -rc 0xC0000000 -h -o $BIN -m $MAP support.asm $ASM

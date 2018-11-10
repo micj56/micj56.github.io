@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>Serviceorientierte Architekturen</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="Serviceorientierte Architekturen" />
+    <meta name="title" content="Serviceorientierte Architekturen" />
+    <meta name="author" content="Michael J&auml;ger" />
+    <meta name="robots" content="index,nofollow" />
+    <meta name="revisit" content="after 7 days" />
+    <meta http-equiv="expires" content="86400" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="keywords" content="Serviceorientierte Architekturen,SOA,Webservices" />
+
+    <link rel="stylesheet" style type="text/css" href="homepage/homepage.css " />
+    <script type="text/javascript" src="homepage/utils.js" > </script>
+</head>
+
+
+
+<body onload="homepageInit()" >
+
+<div id="pagehead">
+  <div id="pagehead1">
+       <div id="ph2name"> 
+         <a href="homepage/index.html">Prof. Dr. Michael J&auml;ger</a><br/>
+       </div>
+  </div>
+  <div id="pagehead2">
+       <a href="http://isa.mni.fh-giessen.de">
+           Institut f&uuml;r Softwarearchitektur </a>        <br/>
+       <a class="address" href="http://www.mni.fh-giessen.de" >Fachbereich MNI</a><br/>
+       <a href="http://www.th-mittelhessen-friedberg.de">Technische Hochschule Mittelhessen</a>
+  </div>
+  <div id="rule"><hr/></div>
+</div>
+
+
+      <div id="content">      
+
+	<h1> Serviceorientierte Architekturen (SOA)</h1>
+	
+	<p> Diese Seite gibt einen &Uuml;berblick &uuml;ber laufende und geplante
+	  Lehr-, Forschungs- und Entwicklungsprojekte im Zusammenhang 
+	  mit Serviceorientierten Architekturen.
+	</p>
+
+
+	<h3>Serviceorientiertes Computing</h3>
+	<p> 
+	  Serviceorientiertes Computing betrachtet die Software eines
+	  Unternehmens als heterogene Landschaft vorhandener Anwendungen, die
+	  von autonomen Teams entwickelt und betrieben werden,
+	  aber im Rahmen von &uuml;bergreifenden Gesch&auml;ftsprozessen miteinander 
+	  kommunizieren m&uuml;ssen.    
+	</p>
+	<p> 
+	  Der Begriff "Heterogenit&auml;t" bezieht sich dabei auf Programmiersprachen,
+	  Systemplattformen, Datenbanken, Middleware und Kommunikationsprotokolle.
+	  Der SOA-Ansatz tr&auml;gt bei der Entwicklung verteilter Anwendungen
+	  mehreren besonderen Herausforderungen Rechnung:
+	<ul>
+	  <li><p>
+	      Integration vorhandener Anwendungen
+	  </li>
+	  <li><p>
+	      Interoperabiltit&auml;t trotz Heterogenit&auml;t
+	  </li>
+	  <li><p>
+	      Interoperabiltit&auml;t trotz fehlender Einflussm&ouml;glichkeiten auf
+	      Schnittstellen         
+	  </li>
+	  <li><p>
+	      Flexibilit&auml;t bei &Auml;nderungen der Prozesse
+	  </li>
+	</ul>
+      
+	<p> 
+	  Diese Fragestellungen begegnen uns st&auml;ndig in den IT-Abteilungen der
+	  Industrie, in Software- und IT-Beratungsfirmen, sowie in den
+	  &ouml;ffentlichen Verwaltungen. Insbesondere ist auch unsere Campus-IT
+	  ein Paradebeispiel f&uuml;r die genannten Herausforderungen.
+
+	<h3>SOA in der Lehre</h3>
+	<ul>
+	  <li>
+	    <p>
+	      Im Rahmen des Masterprogramms "Informatik" wird regelm&auml;&szlig;ig
+	      "Serviceorientierte Architekturen" als Wahlpflichtvorlesung
+	      angeboten. Mehr zur 
+	      <a href="../lv/soa/root.html">Lehrveranstaltung finden Sie hier.</a>
+	    </p>
+	  <li><p>
+	  Im Rahmen des Masterprogramms "Informatik" wird unregelm&auml;&szlig;ig
+	  ein Praktikum "Entwicklung serviceorientierter Architekturen mit Java Webservices" 
+          als Wahlpflichtpraktikum
+	  angeboten. Mehr zur 
+	  <a href="../lv/soap/root.html">Lehrveranstaltung finden Sie hier.</a>
+	    </p>
+	 </li>
+	</ul>
+
+	<h3 id="projekte">Projekte: SOA in der anwendungsnahen Forschung</h3>
+	<p> Eine Auswahl an laufenden Forschungs- und Entwicklungsprojekten
+
+	<ul>
+	  <li><p>
+              Einsatz der Open Source SOA-Plattform <a href="http://www.mulesoft.org">"Mule"</a>
+	      in einem Campus-Informationssystem
+	      <p>
+	      eCampus-Projekt: Bachelor und Masterprojekte
+	  <li><p>
+	      Serviceorientierte Gesch&auml;ftsprozessmodellierung: Verteiltes Asset-Management f&uuml;r
+	      Online-Handelsplattformen
+              <p>
+	      in Kooperation mit regionaler Industrie
+	  <li><p>
+	      Einsatz des Enterprise-Service-Bus 
+              <a href="http://www.sopera.de">"SOPERA"</a> in einem Campus-Informationssystem
+	      <p>
+	      eCampus-Projekt
+	  <li><p>
+	      eCampus : Ein Projekt der TH Mittelhessen zur Schaffung eines
+	      Campus-Informationssystems
+	      <p>
+	      Kooperatives Projekt: Pr&auml;sidium, Fachbereiche, ITS
+	</ul>
+
+	
+<div id="modificationDate"></div>
+
+</div>
+</body>
+</html>
+
+ 

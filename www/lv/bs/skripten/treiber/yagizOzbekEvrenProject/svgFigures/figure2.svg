@@ -1,0 +1,38 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000000" id="svg_1" height="36" width="141.000002" y="130.699999" x="245.300001" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="#fff"/>
+  <rect stroke="#000000" id="svg_3" height="36" width="71.000001" y="130.699999" x="168.299999" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="#fff"/>
+  <rect id="svg_5" height="0" width="2" y="61.699999" x="-314.700001" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect stroke="#000000" id="svg_7" height="21" width="6" y="130.699998" x="218.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect id="svg_8" height="31" width="6" y="130.699999" x="173.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect id="svg_9" height="31" width="6" y="130.699999" x="200.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect id="svg_10" height="31" width="6" y="130.699999" x="357.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect stroke="#000000" id="svg_11" height="21" width="6" y="130.699998" x="249.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect stroke="#000000" id="svg_12" height="21" width="6" y="130.699998" x="191.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect stroke="#000000" id="svg_13" height="21" width="6" y="130.699998" x="209.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect stroke="#000000" id="svg_14" height="21" width="6" y="130.699998" x="182.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect stroke="#000000" id="svg_15" height="21" width="6" y="130.699998" x="339.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect stroke="#000000" id="svg_16" height="21" width="6" y="130.699998" x="375.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect stroke="#000000" id="svg_17" height="21" width="6" y="130.699998" x="321.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect stroke="#000000" id="svg_18" height="21" width="6" y="130.699998" x="258.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect stroke="#000000" id="svg_19" height="21" width="6" y="130.699998" x="312.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect stroke="#000000" id="svg_20" height="21" width="6" y="130.699998" x="366.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect id="svg_21" height="31" width="6" y="130.699999" x="227.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect id="svg_22" height="31" width="6" y="130.699999" x="330.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect id="svg_23" height="31" width="6" y="130.699999" x="267.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect id="svg_24" height="31" width="6" y="130.699999" x="276.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect id="svg_25" height="31" width="6" y="130.699999" x="285.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect id="svg_26" height="31" width="6" y="130.699999" x="294.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect stroke="#000000" id="svg_27" height="31" width="6" y="130.699999" x="303.299999" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <rect id="svg_28" height="31" width="6" y="130.699999" x="348.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_29" y="179.699999" x="179.299999" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">Sata Port</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_30" y="179.699999" x="301.299999" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">Power</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_31" y="204.699999" x="237.299999" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">Sata Interface</text>
+ </g>
+</svg>

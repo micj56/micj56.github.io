@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>Android</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="title" content="Android in Lehre und Forschung" />
+    <meta name="author" content="Michael J&auml;ger" />
+    <meta name="robots" content="index,nofollow" />
+    <meta name="revisit" content="after 7 days" />
+    <meta http-equiv="expires" content="86400" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="keywords" content="Android, Smartphone" />
+
+    <link rel="stylesheet" style type="text/css" href="homepage/homepage.css " />
+    <script type="text/javascript" src="homepage/utils.js" > </script>
+  </head>
+
+
+
+    <body onload="homepageInit()" >
+
+      <div id="pagehead">
+	<div id="pagehead1">
+	  <div id="ph2name"> 
+	    <a href="homepage/index.html">Prof. Dr. Michael J&auml;ger</a><br/>
+	  </div>
+	</div>
+	<div id="pagehead2">
+	  <a href="http://isa.mni.fh-giessen.de">
+	    Institut f&uuml;r Softwarearchitektur </a>        <br/>
+	  <a class="address" href="http://www.mni.fh-giessen.de" >Fachbereich MNI</a><br/>
+	  <a href="http://www.fh-giessen-friedberg.de">Fachhochschule Gie&szlig;en-Friedberg</a>
+	</div>
+        <div id="rule"><hr/></div>
+      </div>
+
+
+
+      <div id="content">      
+
+	<h1>Master-Projekte und Themen für die Master-Thesis</h1>
+
+
+	<p> Die nachfolgenden Themenstellungen sind motiviert durch mehrere
+            laufende und geplante Forschungsprojekte und werden in Kooperation
+            mit dem Fraunhofer SIT durchgeführt und betreut.
+
+        <ol>
+<li> <h3>Konzeption und Implementierung einer vertrauenswürdingen PEP/PDP 
+        Architektur für mobile Plattformen am Beispiel Android</h3>
+
+        <p>In einer Sicherheitsarchitektur benötigt man Sicherheitskomponenten, die als
+        PEP (Policy Enforcement Point) Zugriffe auf Ressourcen gewähren
+        oder verweigern. Die Entscheidung trifft ein PDP (Policy Decision Point).
+        Für PEPs auf mobilen Geräten und externe oder verteilte PDPs sind
+        mehrere Angriffsszenarien denkbar, um die Sicherheitsrichtlinien zu
+        manipulieren oder zu unterlaufen. 
+        <p>Ziel ist die Analyse der Angriffsszenarien, 
+        die Konzeption einer Sicherheitsarchitektur und deren prototypische Implementierung
+        für Android-Smartphones unter Nutzung der
+        Trusted Computing Technologie.
+        
+<li> <h3>Zuverlässige Regelsatzänderung</h3>
+
+        <p>Bei erkannten Angriffen auf komplexe Systeme müssen Gegenmaßnahmen ergriffen
+           werden, insbesondere auch Änderungen von Sicherheitsrichtlinien, um etwa
+           mit Schadsoftware infizierte Netze zu isolieren. Sicherheitsrichtlinien
+           werden durch Engeräte-unabhängige Regeln beschrieben. Bei dynamischen
+           Anpassungen der Regeln muss die Abbildung von Regelsätzen auf Geräte-spezifische 
+           Konfigurations-Mechanismen (z.B. Android: Linux "iptables") automatisiert erfolgen.
+         <p>
+           Ziel ist ein Konzept und eine prototypische Implementierung für die
+           sichere, automatisierte Umsetzung von Sicherheitsregeln für die
+           Android-Plattform. 
+
+<li> <h3>Erschließung von Anwendungs-Szenarien für vertrauenswürdige mobile und eingebettete Plattformen</h3>
+
+        <p> Durch Einsatz der Trusted Computing Technologie wird es demnächst möglich
+            sein, von einem mobilen Gerät dokumementierte
+            Ereignisse (z.B. Photos mit Orts- und Zeitangaben) gerichtsfest nachzuweisen.
+            Dafür gibt es eine ganze Reihe von hochinteressanten Anwendungsbereichen,
+            z.B. PKW-Mautsysteme, elektronische Fußfesseln, manipulationssichere
+            Fahrtenschreiber usw.
+        <p> Ziel ist die Analyse möglicher Anwendungsdomänen für die Nutzung
+            mobiler oder eingebetteter Geräte, die vertrauenswürdig Ereignisse
+            dokumentieren können.
+ 
+<li> <h3>Erweiterung der IMA (Integrity Measurement Architecture) 
+   mit dynamischen Regeln für mobile Systeme am Beispiel Android</h3>
+ <p>
+ Das Open Source Projekt
+ Integrity Measurement Architecture (IMA) implementiert die Überprüfung
+ des Gerätezustands im Sinne des Trusted Computing
+ für Linux-basierte Betriebssysteme wie Android.
+ <p>
+ Aktuelle Weiterentwicklungen am IMA haben das Konzept von dynamischen
+ Regeln eingeführt, die es erlauben zu definieren, welche Dateien zu
+ messen sind.
+ <p>
+ Ziel der Arbeit ist es zu evaluieren, inwieweit dieses System sich auf
+ einem Android-basierten System anwenden läßt. Darüber hinaus ist ein
+ Konzept sowie dessen Realisierung gefordert, dass eine Dokumentation
+ der Änderung der IMA Regeln erlaubt, so dass einer dritten Partei
+ nachgewiesen werden kann, in welchem Zustand welche Regeln mit welchem
+ neuen Zustand angewendet wurden.
+
+
+<li> <h3>Security and Non-Repudiation for Voice-over-IP conversations</h3>
+  <p> Vertrauenswürdige Sprachübertragung könnte durch Kombination zweier
+      Konzepte möglich sein: Trusted Computing Technologie und Voice-over-Ip-Signaturen.
+  <p> Ziele:
+      <ul>
+      <li> Konzept zur Kombination von TC und VoIP Signatures
+      <li> Implementierung des Konzeptes als Modifikation des VoIP Stacks von Android
+      <li> Entwicklung eines Bedien- und Konfigurationskonzepts dazu
+      </ul>
+
+
+<li> <h3>Security Event Modelling</h3>
+   <p>Ein "Trusted Evidence Generator" (TEG), wie er im Master-Praktikum
+      realisiert werden soll, kann eine Vielzahl von Ereignissen liefern.
+      Aufbauend auf eine bereits abgeschlossenen Masterarbeit soll ein
+      Modell entwickelt werden, das Abhängigkeiten zwischen den einzelnen
+      Ereignissen erfasst und so ein "Complex Event Processing" (CEP)
+      ermöglicht.
+
+<li> <h3>Forschungsprojekt MASSIF: Staudamm-Szenario zur Analyse fortgeschrittener Sicherheitskonzepte </h3>
+    <p>In einem hochkomplexen System wie einem Staudamm sind laufend
+       riesige Mengen an Messwerten zu verarbeiten, ständig liegen einzelne
+       Werte außerhalb von Toleranzgrenzen. Im Rahmen des internationalen MASSIF-Forschungsprojekts 
+       sind folgende Fragen zu analysieren:
+       
+      <ul>
+      <li> Wie kann man in der Menge der ungewöhnlichen Messwerte echte Bedrohungen erkennen?
+      <li> Wie verwaltet man die Daten aus heterogenen Geräten und Netzwerken?
+      <li> Wie korreliert man hochgradig heterogene Daten um Gefahren erkennen zu können?
+      </ul>
+     
+      
+<li> <h3> Intrusion Detection for mobile and embedded Devices</h3>
+     <p> Ziel ist die Analyse der Möglichkeiten, die ein Linux-basiertes mobiles System
+         hat, Angriffe auf sich selbst zu erkennen. 
+         Für ausgewählte Angriffs-Szenarien ist zu untersuchen,
+         ob Intrusion Detection Methoden und Tools aus dem PC-Bereich
+         verwendbar sind und  welche Ressource-schonenden Möglichkeiten der Erkennung
+         zur Verfügung stehen.
+
+
+<li> <h3>Implementierung einer vertrauenswürdigen Plattform auf einem Android-Gerät</h3>
+     <p> Aufbauend auf die Ergebnisse des Master-Praktikums, dass die 
+         prototypische Entwicklung eines Android-basierten vertrauenswürdigen 
+         Ereignis-Dokumentationssystem auf dem Android-Simulator zum Ziel hat,
+         soll diese Funktionalität auf einem realen Smartphone implementiert werden.
+     <p> Dazu muss die modifizierte Android-Plattform und die TPM-Funktionalität
+         mit den anderen Gerätetreibern kombiniert werden. Ziel ist eine
+         Demoanwendung, die man auf Workshops, Messen und Tagungen präsentieren kann.
+
+<li> <h3>Auswirkungen von ausgewählten Sicherheitsmechanismen auf Performance und 
+        Energiebedarf mobiler Geräte</h3>
+     <p> Durch Sicherheitsmechanismen auf einem mobilen Gerät, wird dieses Gerät
+         gegen Angriffe abgehärtet. Allerdings entsteht zusätzlicher Rechenaufwand.
+          Ziel ist eine Analyse der Auswirkungen ausgewählter
+         Sicherheitsmaßnahmen auf die Performanz und den Energiebedarf.
+         Dabei steht die Frage im Vordergrund, ob prinzipiell realisierbare
+         Sicherheitskonzepte zur Überlastung und/oder zu inakzeptabel kurzen
+         Akkulaufzeiten führen können. 
+
+
+        </ol>
+
+	<div id="modificationDate"></div>
+
+      </div>
+    </body>
+</html>
+
+ 

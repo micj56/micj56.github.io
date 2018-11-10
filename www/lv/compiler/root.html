@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>compilerbau</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="title" content="compilerbau" />
+    <meta name="author" content="Michael Jäger" />
+    <meta name="robots" content="index,nofollow" />
+    <meta name="revisit" content="after 7 days" />
+    <meta http-equiv="expires" content="86400" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="keywords" content="compilerbau" />
+
+    <link rel="stylesheet" style type="text/css" href="homepage/homepage.css " />
+    <script type="text/javascript" src="homepage/utils.js" > </script>
+</head>
+
+
+
+<body onload="homepageInit()" >
+
+<div id="pagehead">
+  <div id="pagehead1">
+       <div id="ph2name"> 
+         <a href="homepage/index.html">Prof. Dr. Michael Jäger</a><br/>
+       </div>
+  </div>
+  <div id="pagehead2">
+       <a class="address" href="http://www.mni.thm.de" >Fachbereich MNI</a><br/>
+       <a href="http://www.th-mittelhessen.de">Technische Hochschule Mittelhessen</a>
+  </div>
+  <div id="rule"><hr/></div>
+</div>
+
+
+
+
+<div id="content">      
+
+<div id="teaserimage" style="left:400px;top:-28px"><img src="bilder/lr-parser.jpg" alt="" width="280px"/></div>
+
+
+
+<h1>Compilerbau <br> SS 2018</h1>
+
+
+<pre>
+
+
+</pre>
+
+
+<h3>Aktuelles</h3>
+<ul>
+  <li><p> Die Ergebnisse der Klausuren sind im Prüfungssystem erfasst.
+  <p><em> Notenspiegel</em>:
+  sehr gut: 10%, gut: 21%, befriedigend: 29%, ausreichend: 26%, nicht bestanden: 14%
+  <p> Klausureinsicht nach Vereinbarung per E-Mail
+  <p>  <a href=klausuren/cb-klausur-2018.pdf>Hier finden Sie eine Musterlösung </a>
+<!--  <li><p><strong>Slack-Kurs:</strong> Als Diskussionsplattform für Compilerbauprobleme während der vorlesungsfreien Zeit hat Tobias Turschner einen Slack-Kurs eingerichtet. Alle Teilnehmer der Veranstaltung sind eingeladen, dem Kurs beizutreten. URL:-->
+<!--  <a href="https://compilerbaujaeger.slack.com/join/shared_invite/enQtMzg1NjkyODc4MDgyLTEwZDllNTk0N2UxNTc4OWI0ODg3NGYyZmIyN2RhNmQ4ZDI2MmJiMDJmYjVmNDdmZTdhNTg5YjNjMzBkNGY5OGY"> Slack-Kurs Compilerbau</a>-->
+</ul>
+
+
+
+
+<h3>Aktuelle Aufgabenblätter</h3>
+
+Die nachfolgenden Aufgabenblätter dienen der Vertiefung der theoretischen Grundlagen. Sie beziehen sich auf die Vorlesungsinhalte.
+Das zur Lösung notwendige Wissen ist vollständig im Skript zur Vorlesung enthalten. Aufgaben ähnlicher Art sind Bestandteil der Klausur.
+<p>
+Diese Aufgaben sollen selbstständig in Einzel- oder Teamarbeit bearbeitet werden. Falls Ihnen die Lösung nicht gelingt oder Sie sich unsicher sind, ob ihre Lösung richtig ist, wenden Sie sich während der Übungsstunden an einen Tutor zur Klärung. Für ausgewählte Aufgaben werden Lösungsvorschläge veröffentlicht.
+<p>
+(Praktikumsaufgaben siehe unten)
+
+<ul>
+
+   <li> <a href="aufgaben/a1/a1.pdf"> Aufgabenblatt 1 (Grundlagen)</a> 
+   <li> <a href="aufgaben/a2/a2.pdf"> Aufgabenblatt 2 (Grundlagen Lexikalische Analyse)</a> 
+   <li> <a href="aufgaben/a3/a3.pdf"> Aufgabenblatt 3 (Reguläre Ausdrücke und Endliche Automaten)</a> 
+   <li> <a href="aufgaben/a4/a4.pdf"> Aufgabenblatt 4 (Kontextfreie Grammatiken)</a> 
+   <li> <a href="aufgaben/a5/a5.pdf"> Aufgabenblatt 5 (Grammatiken und Parserverfahren)</a> 
+   <li> <a href="klausuren/cb-klausur-2014.pdf"> Aufgabenblatt 6 (Aufgabenmix: alte Klausur)</a> <br>
+        <a href="klausuren/cb-klausur-2014-loesung.pdf"> Lösungsvorschlag zu Aufgabenblatt 6</a> 
+   <li> <a href="aufgaben/a7/a7.pdf"> Aufgabenblatt 7 (Aufgabenmix: alte Klausur)</a> <br>
+    <a href="aufgaben/a7/a7-loesung.pdf"> Lösungsvorschlag zu Aufgabenblatt 7</a> 
+  <!-- <li> <p>Als nächstes soll in der zweiten Aprilhälfte die lexikalische Analyse für SPL (Praktikumsaufgabe P1) mit Hilfe eines Scannergenerators implementiert werden. Mehr dazu im nachfolgenden Abschnitt <cite><a href="#praktikum">Praktikum und Hausübungen</a></cite>. -->
+
+</ul>
+
+<a name=praktikum> <h3>Praktikum und Hausübungen</h3></a>
+
+<p> Im Praktikum wird ein kompletter Compiler für die einfache prozedurale Programmiersprache SPL entwickelt.
+Als Entwicklungssprache wird Java empfohlen, allerdings ist auch C als Implementierungssprache möglich.
+Für die lexikalische Analyse wird bei Java der Scannergenerator <em>jflex</em> (für C:  <em>flex</em>)
+eingesetzt, für die Syntaxanalyse der Parsergenerator <em>cup</em> (für C: <em>bison</em>).
+<p>
+
+<p>
+
+Zum Compilerbaupraktikum im gibt es 
+<ul>
+  <li><p><a href="praktikum/index.html">Einführende Hinweise</a>, 
+  <li><p><a href="praktikum/praktikumsskript/praktikumsskript.pdf">Ein Praktikumsskript</a> 
+  <li><p>separate Praktikumsaufgabenblätter (siehe unten) 
+  <li><p>Eine Referenzimplementierung und einen ECO32-Simulator (siehe <a href="praktikum/index.html">Einführende Hinweise</a>),
+  <li><p>Unterlagen zu den Scannergeneratoren:</p>
+  <ul>
+    <li><a href="http://jflex.de/manual.html">Java: jflex</a>
+    <li><a href="http://epaperpress.com/lexandyacc/download/flex.pdf">C: flex</a>
+  </ul>
+  <li><p>Unterlagen zu den Parsergeneratoren:
+  <ul>
+    <li><a href="http://www2.cs.tum.edu/projekte/cup/manual.html">Java: cup</a>
+    <li><a href="https://www.gnu.org/software/bison/manual/bison.pdf">C: bison</a>
+  </ul>
+  <li><p>SPL-Testprogramme für Ihren Compiler (siehe unten: Praktikumsaufgabe 3 / Referenztests) 
+</ul> 
+
+
+<h3>Praktikumsaufgaben</h3>
+<ul>
+
+  <li> <p>Praktikumsaufgabe 1 (SPL-Scanner): Bearbeitung bis zum 24.4.18
+  <ul>
+    <li> <a href="praktikum/aufgaben/pa1/pa1.pdf"> Aufgabenstellung</a> 
+    <li> <a href="praktikum/aufgaben/pa1/pa1-resources-Java.tar.gz"> Ressourcen für die Java-Implementierung</a> 
+    <li> <a href="praktikum/aufgaben/pa1/pa1-resources-C.tar.gz"> Ressourcen für die C-Implementierung</a>
+  </ul>
+  <li> <p>Praktikumsaufgabe 2 (SPL-Parser): Bearbeitung bis zum 10.5.18
+  <ul>
+    <li> <a href="praktikum/aufgaben/pa2/pa2.pdf"> Aufgabenstellung</a> 
+    <li> <a href="praktikum/aufgaben/pa2/pa2-resources-Java.tar.gz"> Ressourcen für die Java-Implementierung</a> 
+    <li> <a href="praktikum/aufgaben/pa2/pa2-resources-C.tar.gz"> Ressourcen für die C-Implementierung</a> 
+  </ul>
+  <li> <p>Praktikumsaufgabe 3 (Abstrakter Syntaxbaum): Bearbeitung bis zum 14.5.18
+  <ul>
+    <li> <a href="praktikum/aufgaben/pa3/pa3.pdf"> Aufgabenstellung</a> 
+    <li> <a href="praktikum/aufgaben/pa3/pa3-resources-Java.tar.gz"> Ressourcen für die Java-Implementierung</a> 
+    <li> <a href="praktikum/aufgaben/pa3/pa3-resources-C.tar.gz"> Ressourcen für die C-Implementierung</a> 
+    <li><p>  Die Referenztests finden Sie <a href="reftests.tar.gz"> als komprimiertes Tar-Archiv (reftests.tar.gz) hier</a>
+  </ul>
+  <li> <p>Praktikumsaufgabe 4 (Semantische Analyse): Bearbeitung bis zum 13.6.18
+  <ul>
+    <li> <a href="praktikum/aufgaben/pa4/pa4.pdf"> Aufgabenstellung</a> 
+    <li> <a href="praktikum/aufgaben/pa4/pa4-resources-Java.tar.gz"> Ressourcen für die Java-Implementierung</a> 
+    <li> <a href="praktikum/aufgaben/pa4/pa4-resources-C.tar.gz"> Ressourcen für die C-Implementierung</a> 
+  </ul>
+  <li> <p>Praktikumsaufgabe 5 (Variablen-Allokation): Bearbeitung bis zum 22.6.18
+  <ul>
+    <li> <a href="praktikum/aufgaben/pa5/pa5.pdf"> Aufgabenstellung</a> 
+    <li> <a href="praktikum/aufgaben/pa5/pa5-resources-Java.tar.gz"> Ressourcen für die Java-Implementierung</a> 
+    <li> <a href="praktikum/aufgaben/pa5/pa5-resources-C.tar.gz"> Ressourcen für die C-Implementierung</a> 
+  </ul>
+  <li> <p>Praktikumsaufgabe 6 (Codegenerator): Bearbeitung bis zum 6.7.18 empfohlen
+  <ul>
+    <li> <a href="praktikum/aufgaben/pa6/pa6.pdf"> Aufgabenstellung</a> 
+    <li> <a href="praktikum/aufgaben/pa6/pa6-resources-Java.tar.gz"> Ressourcen für die Java-Implementierung</a> 
+    <li> <a href="praktikum/aufgaben/pa6/pa6-resources-C.tar.gz"> Ressourcen für die C-Implementierung</a> 
+  </ul>
+ </ul>
+
+</ul>
+
+<!-- Die Praktikumsaufgaben sind jeweils separat für Java und C als Tar-Archive -->
+<!-- verpackt, z.B. <tt>Aufgabe1-Java.tar.gz</tt> oder <tt>Aufgabe2-C.tar.gz</tt>. In jedem Archiv finden Sie eine Textdatei <tt>README</tt> mit der Aufgabenstellung und sonstige Dateien, die Sie als Ausgangspunkt für Ihre eigene Lösung nutzen sollen. -->
+
+<!-- <ul> -->
+<!--   <li> -->
+<!-- <p> -->
+<!--   <a href="praktikum/index.html"> Die Praktikumsaufgaben und die anderen Unterlagen zum Praktikum finden Sie hier.</a> -->
+
+<!--   <li> -->
+<!-- <p> -->
+<!--   Die Ergebnisse der automatischen Auswertung der ersten Hausuebung (Stand 19.6.17) <a href="cbhu1-erg.html"> finden Sie hier</a> -->
+<!--   <p> Bei Nichterreichen der erforderlichen Punktzahl ist eine Nachbesserung bis zum Sonntag, den 18.6., 24 Uhr möglich. -->
+<!--      Die Einreichung der verbesserten Lösungen erfolgt per Mail. -->
+<!--   <li> -->
+<!-- <p> -->
+<!--   Die Referenztests finden Sie <a href="reftests.tar.gz"> als komprimiertes Tar-Archiv (reftests.tar.gz) hier</a> -->
+<!-- </ul> -->
+
+<!-- <h3>Erweitertes Java-Skelett zur  Hausübung 2</h3> -->
+
+<!--  Das Skelett enthält -->
+<!-- 	  Klassen zur Nutzung des "Visitor"-Entwurfsmusters inklusive erweiterter -->
+<!-- 	  Definitionen für den Abstrakten Syntaxbaum. Außerdem ist schon das Skelett -->
+<!-- 	  für die Speicherplatz-Allokation (Praktikumsaufgabe 5) und die Code-Erzeugung (Praktikumsaufgabe 6) integriert. -->
+<!-- 	  <p> Das Skelett ist in der angebotenen Form nicht lauffähig. Die Integration -->
+<!-- der verfügbaren Module bleibt Ihnen überlassen. -->
+
+<!-- Weitere Ressourcen: <a href="spl/spl/Aufgaben/spl-visitor-skeleton.tar.gz">Erweitertes Skelett fuer das Java-Backend </a> (Tar-Archiv) -->
+
+
+<h3>Skripten</h3>
+
+Die Unterlagen werden im Adobe PDF-Format bereitgestellt.
+
+<ul>
+<li><p>     <a href="skripten/compilerskript/pdf/compilerskript.pdf"> Skript </a>
+<li><p>     <a href="skripten/regexp/regex-folien.pdf"> Folien zu regulären Ausdrücken </a>
+<li><p>     <a href="skripten/endliche-automaten/ea-folien.pdf"> Folien zu Endlichen Automaten</a>
+<li><p>     <a href="visitor-pattern/visitor-pattern.pdf"> Folien zum Visitor-Muster in Java</a>
+   </ul><br>
+</ul>
+<p>
+
+
+<h3>Leistungsnachweis</h3>
+<p>
+Im SS 2018 wird der Leistungsnachweis für das Fach "Compilerbau" durch 
+erfolgreiche Teilnahme an der Klausur erbracht. Die Klausur findet
+voraussichtlich im September 2018 statt. 
+<p>
+<!-- <a href="klausurzulassung.html">Voraussetzung für die -->
+<!-- Klausurteilnahme / Liste zugelassener Studierender</a> -->
+<p>
+
+<!--<h3>Termine</h3>-->
+<!--<p>-->
+<!--Die Klausuren finden, soweit nichts anderes bekanntgegeben wird, immer in der Klausurwoche-->
+<!--vor den Semesterferien statt.-->
+<!--</ul>-->
+
+
+
+
+<h3>Alte Klausuren</h3>
+<ul>
+<li> <a href="klausuren"> Verzeichnis mit alten Klausuren</a>
+</ul>
+
+
+<div id="modificationDate"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" d="m345.557885,62.03921l-14.321777,0c-1.3984,-9.971146 -8.424178,-20.530144 -16.510577,-29.519058c-8.626844,-9.227031 -17.929244,-16.623538 -25.563022,-17.635535c-0.418844,-0.059529 -0.837689,-0.104176 -1.3376,-0.111617l-50.187021,0c-0.803911,0 -1.587556,0.349734 -2.155022,0.982232c-0.560711,0.617616 -0.891733,1.488231 -0.891733,2.381169l0,43.902808l-14.011022,0c-7.458133,0 -13.511111,6.667274 -13.511111,14.882308l0,66.040241l27.522133,0l0,15.470159c0,0.878056 0.310756,1.711465 0.891733,2.366287c0.580978,0.632498 1.344356,0.974791 2.155022,0.974791l90.828442,0c0.797156,0 1.567289,-0.342293 2.148267,-0.974791s0.932267,-1.48079 0.932267,-2.366287l0,-15.470159l27.522133,0l0,-66.040241c0,-8.215034 -6.046222,-14.882308 -13.511111,-14.882308zm-20.131555,93.021865l-84.755198,0l0,-23.261047l84.755198,0l0,23.261047zm0,-79.657553c0,-0.223235 0,-0.468793 -0.020267,-0.714351c-0.101333,-0.505998 -0.418844,-1.004556 -0.837689,-1.488231l-83.897242,0l0,-51.71602l47.201065,0l0,0.007441c2.060444,-0.141382 3.8304,2.098405 5.195022,7.22536c1.236267,4.873956 1.547022,11.228701 1.547022,15.641306c0.006756,3.22202 -0.128356,5.394837 -0.128356,5.394837l-0.249956,3.556872l3.242667,0.037206c0.013511,0 7.491911,0.104176 14.8352,1.9347c7.0528,1.681701 12.565333,5.022779 13.092266,8.810326c0.020267,0.334852 0.020267,0.677145 0.020267,0.989673l0,10.320881z" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <rect id="svg_2" height="96" width="146" y="215" x="377.299999" stroke-opacity="null" stroke-width="21" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_3" height="96" width="146" y="219" x="16.299999" stroke-opacity="null" stroke-width="20" stroke="#000000" fill="#ffffff"/>
+  <path id="svg_5" d="m162.00136,275.998327l67.129992,0l0,-44.000001l-10.289996,0l20.579994,-21.999996l20.580004,21.999996l-10.290002,0l0,66.000006l-87.70999,0l-0.000003,-22.000005z" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <path transform="rotate(-90 472.00134277343756,165.99833679199216) " id="svg_6" d="m423.00136,187.998327l67.129992,0l0,-44.000001l-10.289995,0l20.579994,-21.999996l20.580005,21.999996l-10.290003,0l0,66.000006l-87.70999,0l-0.000003,-22.000005z" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+  <path stroke="#000000" id="svg_8" d="m212.215387,183.674383l6.447129,-6.703633l17.661805,18.355636l29.441659,-30.592727l6.449408,6.698895l-35.891067,37.301097" stroke-opacity="null" stroke-width="null" fill="#546433"/>
+  <path id="svg_9" d="m418.115997,152.114795l-15.189772,-14.528476l15.187011,-14.528476l-7.807466,-7.472844l-15.189772,14.528476l-15.189772,-14.528476l-7.807466,7.472844l15.187011,14.528476l-15.189772,14.528476l7.812987,7.470203l15.187011,-14.528476l15.187011,14.528476" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#8B4D4B"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_10" y="271.390625" x="58.904686" fill-opacity="null" stroke-opacity="null" stroke="#000000" fill="#000000">Computer 1</text>
+  <text stroke="#000000" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_11" y="267.390625" x="419.904675" fill-opacity="null" stroke-opacity="null" fill="#000000">Computer 2</text>
+  <text stroke-width="0" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_12" y="343" x="7.299999" stroke-opacity="null" stroke="#000000" fill="#000000">First attempt to printer, accepted</text>
+  <text stroke-width="0" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_13" y="343" x="332.299999" stroke-opacity="null" stroke="#000000" fill="#000000">Second attempt to printer while busy, declined</text>
+ </g>
+</svg>

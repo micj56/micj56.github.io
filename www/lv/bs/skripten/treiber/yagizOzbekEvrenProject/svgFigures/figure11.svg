@@ -1,0 +1,18 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" height="30" width="350" y="215" x="100" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_2" height="30" width="350" y="125" x="100" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_3" height="30" width="350" y="155" x="100" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_4" height="30" width="350" y="185" x="100" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_5" y="144" x="216.901562" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">User-level IO software</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_6" y="174" x="153.299999" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">Device-independent operating system software</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_7" y="204" x="238.096874" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">Device drivers</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_8" y="234" x="230.503124" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">Interrupt handlers</text>
+ </g>
+</svg>

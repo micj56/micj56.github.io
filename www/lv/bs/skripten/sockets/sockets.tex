@@ -1,0 +1,538 @@
+\documentclass[12pt,utf8]{article}
+\input{localdefs}
+\usepackage{graphicx} 
+
+\pagestyle{empty}
+\breit
+\textheight22cm
+
+\begin{document}
+
+
+\section*{Internetkommunikation mit der Socket-API}
+
+\begin{itemize}
+\item
+Ein Socket ({\em Steckdose\/}) ist ein Kommunikations-Endpunkt.
+
+\item
+Austausch von Nachrichten zwischen Prozessen erfolgt
+{\em verbindungsorientiert\/} (SOCK\_STREAM) oder im {\em Datagramm-Stil\/}
+(SOCK\_DGRAM)
+
+\item
+Kommunizierende Prozesse können auf demselben Rechner ablaufen oder
+auf unterschiedlichen miteinander vernetzten Maschinen
+
+\item
+Die Programmierschnittstelle ist generisch, d.h. sie unterstützt verschiedene Protokollfamilien
+und - daran gekoppelt - verschiedene Adressierungsarten
+({\em Adressdomänen\/}, {\em Adressfamilien\/} oder {\em Kommunikationsdomänen\/}).
+
+Beispiele für Protokollfamilien:
+\begin{itemize}
+\item  {\em PF\_UNIX} -- (``UNIX domain sockets''): effiziente rechnerinterne Kommunikation, Adressobjekte sind Pfade im Dateisystem
+\item  {\em PF\_INET} -- Internet V4
+\item  {\em PF\_INET6} -- Internet V6
+\end{itemize}
+
+Die entsprechenden Adressfamilien sind {\em AF\_UNIX}, {\em AF\_INET} bzw. {\em AF\_INET6}. Die
+ursprünglich als sinnvoll erachtete Trennung von Adress- und Protokollfamilien
+wurde bislang für keine Protokollfamilie benötigt, so dass tatsächlich {\em PF\_xxxxx} und   {\em AF\_xxxxx} identisch
+ definiert sind. 
+\end{itemize}
+
+
+\subsection*{Internet-Sockets}
+
+\begin{itemize}
+\item  verbindungsorientierte Kommunikation mit TCP
+(Transmission Control Protocol)
+\item  Datagramm-Austausch mit UDP (User Datagram
+Protocol)
+\item Adressen bestehen aus der IP-Nummer des Rechners und einer (TCP- oder
+   UDP-) Port-Nummer
+\item  Die IP-Nummer identifiziert einen Netzwerkadapter eines Rechners
+    im Netzwerk
+\item Die Port-Nummer ist eine
+innerhalb des Rechners eindeutige Zieladresse für Nachrichten.
+\end{itemize}
+
+
+\subsection*{{\em Socket\/}-Aufruf}
+
+\begin{verbatim}
+#include <sys/types.h>
+#include <sys/socket.h>
+
+int socket (int protokollfamilie, int typ, int protokoll);
+\end{verbatim}
+
+
+
+Durch Protokollfamilie und Typ ist meist das Protokoll schon festgelegt, man
+kann als dritten Parameter in der Regel einfach 0 übergeben und erhält das
+
+Default-Protokoll (für Datagramme: UDP, verbindungsorientiert: TCP).
+
+
+\vspace*{2em}
+
+Aufrufbeispiel:
+\begin{verbatim}
+    int sock=socket(PF_INET, SOCK_DGRAM, 0);
+\end{verbatim}
+
+
+
+\subsection*{Internet-Adressen}
+
+Für die Weiterleitung einer Nachricht im Internet zwischen zwei Rechnern
+ist die IP-Adresse der jeweiligen Netzwerkschnittstellen maßgeblich, 
+für die Adressierung der richtigen
+Empfänger-Anwendung innerhalb des Empfänger-Rechners die
+Portnummer des Transportprotokolls.
+
+Zum Nachrichtenaustausch ist immer eine lokale {\bf und} eine entfernte
+Adresse nötig. Da der socket-Aufruf keine Adressen festlegt, sind die Adressen
+durch andere Funktionen festzulegen:
+\begin{titemize}
+\item {\em bind\/} legt die lokale Adresse fest
+
+Dabei kann man wählen, ob die Kommunikation auf eine bestimmte Netzwerkschnittstelle
+des Rechners beschränkt sein soll oder ob alle Schnittstellen benutzt werden
+können. Ein Server muss seine lokale Adresse festlegen, damit er
+erreichbar ist. 
+\item Die Empfängeradresse kann vor dem Versenden mit {\em connect\/} oder
+  beim Versenden mit {\em sendto\/}
+  oder {\em sendmsg\/} festgelegt werden.
+\end{titemize}
+
+
+
+\subsection*{Interne Repräsentation von Internetadressen}
+
+Eine Adresse der Adressfamilie AF\_INET ist vom Typ
+\begin{verbatim}
+        struct sockaddr_in
+\end{verbatim}
+und besteht aus folgenden Komponenten
+
+
+
+\begin{center}
+{\bf Internetadresse}
+
+\fbox{
+\begin{tabular}{ccc}
+Adressfamilie & IP-Nummer  & Port \\
+({\tt sin\_family}) & ({\tt sin\_addr}) & ({\tt sin\_port}) \\
+ \fbox{\large\bf AF\_INET} &  \fbox{\large\bf 212.201.7.21} & \fbox{\large\bf 80} \\
+\end{tabular}
+}
+\end{center}
+
+\begin{titemize}
+\item {\tt sin\_family}: Adressdomäne (= AF\_INET)
+\item {\tt sin\_addr}: IP-Nummer des Rechners -- 4 Byte
+
+  Der Typ von {\tt sin\_addr} ist {\tt struct in\_addr}, eine Struktur mit
+  nur einer Komponente {\tt s\_addr}.
+
+\item {\tt sin\_port}: Portnummer -- 2 Byte
+\end{titemize}
+
+Aus technischen Gründen können implementierungsabhängig innerhalb der
+Adressstruktur vor und hinter diesen Komponenten Lücken entstehen.
+Zur korrekten Verarbeitung sollte man sicherstellen, dass die
+gesamte Struktur mit Nullen initialisiert wird, z.B.
+
+\begin{verbatim}
+ struct sockaddr_in serveradresse;
+ memset( (void*) &serveradresse, 0, sizeof serveradresse );
+\end{verbatim}
+
+
+\subsection*{Portnummern }
+
+\begin{itemize}
+\item
+  Portnummern sind protokollspezifisch, TCP-Port X $\neq$ UDP-Port X
+
+\item
+  Eine Portnummer dient rechnerintern als eindeutiges
+  "`Nachrichten-Postfach"':
+
+  \begin{titemize}
+  \item in einer entfernten Adresse dient es zur Adressierung der Empfänger-Anwendung
+  \item in der eigenen Adresse ist ein Nachrichtenpuffer damit assoziiert,
+     in den das Betriebssystem Nachrichten ablegt
+  \end{titemize}
+
+\item
+  Server für wohlbekannte Dienste verwenden
+  feste, für den Dienst reservierte Portnummern, z.B. 80 für einen
+  WWW-Server (s. /etc/services). Die Nummern 1 bis 1023 sind dafür
+  reserviert.
+
+\item
+  Portnummern der Client-Anwendungen sind von den Server-Portnummern unabhängig!
+
+\item
+  Ein Programm, das eine beliebige {\em neue\/} Portnummer benötigt, übergibt
+  an das Betriebssystem beim bind-Aufruf eine 0 als Port. Das Betriebssystem
+  sucht daraufhin eine noch nicht vergebene Nummer und trägt sie in die
+  Adressstruktur des Socket ein.
+\end{itemize}
+
+
+\subsection*{IP-Nummern bei mehreren Netzwerkschnittstellen}
+
+  Spezielle IP-Nummer in der Absenderadresse: INADDR\_ANY
+
+  \begin{titemize}
+  \item INADDR\_ANY in der Absenderadresse beim Empfang: Empfang von allen Schnittstellen
+  \item INADDR\_ANY in der Absenderadresse beim Senden: Absender-IP-Nummer wird die Nummer der
+         Schnittstelle, über die (gemäß Routingregeln) versendet wird
+  \end{titemize}
+
+
+
+\subsection*{Adressdarstellung im Netz und im Rechner: Byte-Anordnung}
+
+{\bf Problem:} Bei der Abspeicherung von mehreren Byte großen binär kodierten
+Zahlen (z.B. C-Datentypen short, int oder long) ist die Anordnung der einzelnen Bytes
+im Hauptspeicher vom Rechner abhängig. Bei ``little endian''-Rechnern (Intel PC) steht das
+kleinstwertige Byte an der kleinsten Adresse, bei ``big endian''-Rechnern
+(z.B. ARM, Sun SPARC) ist es umgekehrt. 
+
+Wenn man eine solche Zahl im binären Format in einer Netzwerk-Nachricht
+verpackt versendet, müssen Sender und Empfänger sich dabei ggf. auf eine
+gemeinsame Byte-Anordnung einigen. In Internet-Paketen werden auch die
+Absender- und Empfängeradressen binär kodiert. Damit ein Router diese Adressen
+korrekt verarbeitet kann, muss er ebenfalls die Byte-Anordnung kennen.
+
+Beispiel: Eine Variable i vom Typ
+int ist 4 Byte groß, hat die (Anfangs-)Adresse 1000 und den Wert 1.
+
+\begin{center} 
+\begin{tabular}{c|c|c}
+{\bf Byte-Adresse} & \multicolumn{2}{c}{{\bf Byte-Inhalt}}\\
+           & ``little endian'' &  ``big endian''\\ \hline
+1000 & 0x01 & 0x00\\ \hline
+1001 & 0x00 & 0x00\\ \hline
+1002 & 0x00 & 0x00\\ \hline
+1003 & 0x00 & 0x01\\ \hline
+\end{tabular}
+\end{center}
+
+\subsection*{Einheitliches Netzwerkformat für IP-Adressen}
+
+Für TCP- und UDP Portnummern, sowie für IP-Adressen wird im Internet die
+``big endian''-Darstellung verwendet.
+
+Konversionsroutinen für Portnummern ({\tt unsigned short integer}) und IP-Nummern ({\tt
+unsigned long integer}) vom Rechnerformat in das Netzformat und zurück:
+
+\begin{center}
+\begin{tabular}{ll}
+{\tt htons} & host-to-net short\\
+{\tt htonl} & host-to-net long\\
+{\tt ntohs} & net-to-host short\\
+{\tt ntohl} & net-to-host long\\
+\end{tabular}
+\end{center}
+
+
+Beim Binden von Adressen an Sockets ist in jedem Fall das
+Netzwerkformat zu verwenden. Wenn also die Portnummer 80 eines
+WWW-Servers adressiert werden soll, darf in die Adressstruktur nicht
+einfach {\tt 80} eingesetzt werden, sondern {\tt  htons(80)}.
+
+
+
+
+\subsection*{Externe Repräsentation der IP-Nummern}
+
+Ein anderes Problem ist die externe und interne Repräsentation der IP-Nummern.
+Um die Nummer besser handhaben zu können, werden diese 4-Byte-Adressen
+Byte-weise dezimal mit Punkten als Trennzeichen geschrieben, z.B.
+\dq 212.201.7.21\dq.
+
+Mittels Konversionsroutinen lassen sich solchen zu solchen
+XSZeichenketten die entsprechenden internen Repräsentationen erstellen
+und umgekehrt. Konversionsroutinen, die sowohl für IPv4 als auch IPv6
+funktionieren sind {\em inet\_pton\/} und {\em inet\_ntop\/}, ältere
+Funktionen, die nur IPv4 unterstützen,
+sind {\em inet\_aton\/} und {\em inet\_ntoa\/}. Details stehen im System-Manual.
+
+
+
+
+\subsection*{Datagramm-Kommunikation: {\em bind}, {\em sendto\/} und
+{\em recvfrom\/} }
+
+\subsubsection*{Client-Server-Kommunikationsschema}
+
+
+\begin{center}
+   \bild[7cm]{bilder/dgram-schema}
+\end{center}
+
+
+
+\subsection*{{\tt bind} -- Zuordnung einer Adresse zu einem Socket}
+
+Mit einem {\em bind\/}-Aufruf wird einem Socket eine Internetadresse zugeordnet,
+nämlich die eigene Adresse, die als Absenderadresse in den versendeten
+Nachrichten enthalten ist.
+
+Bei Datagramm-Kommunikation müssen beide Kommunikationspartner eine Adresse
+an ihre Sockets binden.
+
+\begin{verbatim}
+  #include <sys/types.h>
+  #include <sys/socket.h>
+
+  int bind(int sockfd,  struct sockaddr *my_addr, int addrlen);
+\end{verbatim}
+
+Der zweite Parameter ist die Adresse, die an den Socket gebunden wird.
+Da der {\em bind\/}-Aufruf für alle Adressfamilien verwendet wird, ist
+der Adresstyp {\tt struct sockaddr} generisch definiert. Für jede
+Adressfamilie gibt es eine spezifische Variante, bei AF\_INET: {\tt
+struct sockaddr\_in}.
+
+{\tt addrlen} gibt die Größe der Adresse an, die ja je nach Adressfamilie
+variieren kann (bei AF\_UNIX ist die Adresse ein beliebig langer Dateipfad).
+
+{\bf Beispiel:}
+
+\begin{verbatim}
+struct sockaddr_in serveradresse, clientadresse;
+int sockfd;
+...
+
+if ((sockfd=socket(AF_INET, SOCK_DGRAM, 0)) < 0){
+  perror("Fehler beim socket-Aufruf");
+  exit(1);
+  }
+
+/* Adresse mit Nullen initialisieren */
+memset( (void*) &serveradresse, 0, sizeof serveradresse);
+
+serveradresse.sin_family=AF_INET;
+serveradresse.sin_port=htons(80);
+serveradresse.sin_addr.s_addr=inet_aton("212.201.7.21");
+
+
+
+clientadresse.sin_family=AF_INET;
+clientadresse.sin_port=htons(0);
+clientadresse.sin_addr.s_addr=htonl(INADDR_ANY);
+
+if (   bind (sockfd,
+             (struct sockaddr *) &clientadresse,
+             sizeof(clientadresse)
+            ) < 0  ) {
+  perror("Fehler beim bind-Aufruf");
+  exit(1);
+  }
+
+...
+
+\end{verbatim}
+
+
+
+\subsection*{Nachrichten über Socket verschicken}
+
+\begin{itemize} 
+\item Für das Versenden von Nachrichten stehen mehrere Funktionen zur
+Auswahl
+  \begin{titemize}
+  \item write - einfachste Operation (Empfängeradresse vorher mit {\em connect\/}
+     festlegen) 
+  \item send - gegenüber {\em write\/} einige Zusatzoptionen (z.B. Out-of-Band-Nachrichten)
+  \item sendto - mit Empfängeradressangabe
+  \item sendmsg - mit voller Kontrolle über das Nachrichtenformat
+  \end{titemize}
+\end{itemize}
+
+
+\subsection*{sendto}
+\begin{verbatim}
+  #include <sys/types.h>
+  #include <sys/socket.h>
+
+  int sendto(int sockfd,
+             const void *nachricht, int laenge_nachricht,
+             unsigned int flags,
+             const struct sockaddr *empfaengeradresse,
+             int laenge_empfaengeradresse);
+
+\end{verbatim}
+
+\begin{titemize}
+\item Sender muss zunächst einen Socket {\tt sockfd} erzeugt und mit {\tt
+bind} an seine eigene Adresse gebunden haben
+\item Dann ist die
+Empfängeradress-Struktur {\tt empfaengeradresse} auszufüllen
+\item Die im dritten Parameter übergebbaren Flags dienen Sonderfunktionen,
+wie etwa das Senden sogenannter "`Out-of-Band"'-Daten (vgl. {\tt
+sendto}-Manual).
+\item Der Resultatswert gibt die Anzahl der gesendeten Byte an.
+
+\end{titemize}
+
+
+\subsection*{{\tt recvfrom} -- Nachricht über Socket lesen}
+
+Wie beim Versenden stehen auch beim Empfangen von Nachrichten mehrere
+Funktionen zur Auswahl: {\em read\/} und {\em recv\/} liefern nur die Daten,
+aber keine Absenderadresse, während {\em recvfrom\/} und {\em rcvmsg\/}
+zusätzlich die Absenderadresse liefern.
+Wir beschreiben nur {\em recvfrom\/} genauer.
+
+\begin{verbatim}
+  #include <sys/types.h>
+  #include <sys/socket.h>
+
+  int recvfrom(int sockfd,
+               void *puffer, int laenge_puffer,
+               unsigned int flags
+               struct sockaddr *senderadresse,
+               int *laenge);
+\end{verbatim}
+
+
+\begin{itemize}
+\item 
+Sobald ein Socket {\tt sockfd} von einem Prozess erzeugt und mit {\tt bind}
+an seine eigene Adresse gebunden wurde, kann dieser Prozess über den Socket
+Nachrichten empfangen. {\tt recvfrom} blockiert solange, bis eine Nachricht
+für den Empfänger-Port eintrifft.
+
+\item 
+Die Nachricht wird in einem Puffer hinterlegt ({\tt puffer}), genauso wie
+die Absenderadresse ({\tt senderadresse}) und deren Länge. Mit diesen Angaben
+ist der Empfänger in der Lage, eine Antwort zu verschicken.
+Der Resultatswert der Funktion gibt an, wieviele Byte empfangen wurden.
+
+\item 
+{\bf Achtung}: Der letzte Parameter {\em laenge\/} ist eine Ein-/Ausgabeparameter.
+Bei Aufruf ist hier die Größe des für die Absenderadresse reservierten
+Speicherbereichs zu übergeben. Wenn die tatsächliche Absenderadresse grösser
+sein sollte als der dafür reservierte Platz, wird nämlich vom Betriebssystem
+der nicht mehr abspeicherbare Rest abgeschnitten. Dies macht z.B.
+bei den Adressen der UNIX-Domain Sinn (Dateipfade unterschiedlicher Länge).
+
+\item 
+Die Flags dienen Sonderfunktionen (z.B. Lesen von
+"`Out-of-Band"'-Daten (vgl. {\tt recvfrom}-Manual).
+\end{itemize}
+
+
+
+
+\subsection*{Client-Server-Schema}
+
+Das Kommunikationsschema bei verbindungsorientierter Kommunikation, die
+innerhalb der AF\_INET-Domain auf dem TCP-Protokoll basiert, ist asymetrisch:
+Ein Kommunikationspartner spielt den Server, andere sind dessen Clients.
+
+Die Nachrichten, die ein Client an den Server schickt, sind beliebig, wir
+bezeichnen Sie aber im folgenden als {\em Aufträge}.
+
+
+\subsection*{Verbindungsaufbau}
+
+Der Server benutzt zur Verbindungsaufname die folgenden Systemaufrufe
+
+\begin{tabular}{ll}
+{\tt socket} & Socket erzeugen \\
+{\tt bind} & Serveradresse an Socket binden \\
+{\tt listen} & Auftrags-Warteschlage initialisieren \\
+{\tt accept} & Auf Auftrag warten \\
+\end{tabular}
+
+\vspace*{2em} 
+
+Der Client baut seinerseits die Verbindung auf mit
+
+\begin{tabular}{ll}
+{\tt socket} & Socket erzeugen \\
+{\tt connect} & Verbindung zum Server aufbauen \\
+\end{tabular}
+
+
+
+\subsection*{Das {\em Concurrent Server\/}- Prinzip}
+
+Typischerweise wird der Server als {\em concurrent server\/} agieren:
+
+\begin{itemize} 
+\item 
+Ein Thread des Servers, nennen wir ihn "`Master-Thread"', wartet auf
+Aufträge. Diese werden über den "`Auftragseingangs-Socket"', der mit den
+{\em socket\/}- und {\em bind\/}-Aufrufen initialisiert wurde,
+übermittelt.  
+
+\item Bei Eingang eines Auftrags erzeugt der Master-Thread
+einen neuen "`Slave-Thread"', der den Auftrag bearbeitet
+(klassischerweise ein Subprozess).  Währenddessen kümmert sich der
+Master-Thread schon um den nächsten Auftrag.
+
+
+\item 
+"`Auftragseingangs-Socket"' dient der Auftragsannahme.\\
+Wie kommuniziert der Slave-Thread mit dem Client?
+
+\item {\em accept\/}-Semantik:
+
+{\em accept\/}-Aufruf erzeugt für die Bearbeitung des eingegangenen
+Auftrags automatisch einen weiteren Socket und eine neue Portnummer.
+Er bindet den neuen Socket an die neue Portnummer.
+
+\item 
+Slave-Thread kann über neuen Socket zur Auftragsabwicklung mit
+Client kommunizieren
+\end{itemize}
+
+
+\subsection*{ Client-Seite}
+{\em connect\/}-Aufruf 
+\begin{titemize} 
+\item kehrt zurück, sobald
+beim Server der neue Kommunikationsport eingerichtet wurde
+\item  bindet Client-Socket an Kommunikationsport des Servers 
+\item  erzeugt gleichzeitig auch beim Client
+einen Port und bindet diesen an dessen Socket
+
+ ({\em
+bind\/}-Aufruf beim Client überflüssig)
+\end{titemize}
+
+\subsection*{Datenaustausch}
+
+Für den Datenaustausch nach erfolgtem Verbindungsaufbau stehen diverse
+Funktionen zur Verfügung. Im einfachsten Fall verwenden Client und Server
+{\em read\/} und {\em write\/} in Verbindung mit den Socket-Deskriptoren.
+
+Der Verbindungsabbau erfolgt mit {\em close}.
+
+Für Sonderfunktionen lassen sich aber auch folgende Funktionen verwenden:
+{\em send\/}, {\em sendto\/}, {\em sendmsg\/}, {\em recv\/}, {\em recvfrom\/},
+{\em recvmsg}.
+
+Welche zusätzliche Funktionalität haben diese
+Nachrichtenübertragungsfunktionen gegenüber {\em read\/} bzw. {\em
+write}?  Sie bieten z.B. die Möglichkeit, Out-of-Band-Daten zu
+übermitteln oder Nachrichten zu empfangen, ohne diese aus dem
+Nachrichten-Eingangspuffer zu entfernen. Daneben gibt es sehr
+spezielle Funktionen, wie etwa die Übertragung von Dateideskriptoren.
+
+
+\end{document}
+\zeit-letzter-latex-aufruf{07.12.2004    8:26 Uhr}
+\end{document}

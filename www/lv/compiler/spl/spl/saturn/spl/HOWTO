@@ -1,0 +1,37 @@
+
+Wie uebersetze und starte ich ein SPL-Programm?
+-----------------------------------------------
+
+1. Unter welchem System wollen Sie SPL-Experimente machen?
+   a) Linux: Laden Sie alle Dateien aus 'linux' und aus 'common'
+      auf ein Directory Ihrer Wahl auf einem x86-Linux-Rechner.
+   b) SunOS: Laden Sie alle Dateien aus 'sun' und aus 'common'
+      auf ein Directory Ihrer Wahl auf der Sun.
+
+2. SPL-Quelldateien muessen die Endung '.spl' tragen, falls Sie
+   die mitgelieferten Shellscripte verwenden wollen.
+
+3. Uebersetzen einer SPL-Quelldatei am Beispiel 'queens':
+   ./com queens
+   Dabei werden folgende Dateien erzeugt:
+   queens.asm  -  Output des Compilers (= queens in Assembler)
+   queens.bin  -  Output des Assemblers (= queens in ECO32-Binaer)
+   queens.map  -  Lademap des queens-Programms (= wo ist welche Prozedur?)
+
+4. Laufenlassen eines uebersetzten Programms am Beispiel 'queens':
+   ./run queens
+   Es wird damit der ECO32-Simulator gestartet und 'queens.bin' in den
+   simulierten Hauptspeicher geladen. Mit dem Simulator-Kommando 'c'
+   (continue) starten Sie Ihr Programm.
+   Ein laufendes, beendetes oder auch abgestuerztes Programm koennen
+   Sie mit der Escape-Taste anhalten; die Kontrolle landet dann wieder
+   im Simulator. ACHTUNG: Auf der Sun ist zusaetzlich die Return-Taste
+   zu druecken!
+   Zum Verlassen des Simulators gibt's das Kommando 'q' (quit).
+   Alle Kommandos des Simulators koennen Sie sich mit '?' anzeigen lassen.
+
+5. Laufenlassen eines Programms mit Grafik geht genauso; Sie muessen
+   nur anstelle von 'run' das Script 'grun' verwenden. Es ruft den
+   Simulator mit der zusaetzlichen Option '-g' auf; diese installiert
+   den Grafik-Controller im simulierten Rechner.
+

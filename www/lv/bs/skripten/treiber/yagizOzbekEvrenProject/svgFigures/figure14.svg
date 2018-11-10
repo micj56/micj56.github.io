@@ -1,0 +1,32 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" height="71" width="161" y="151" x="207.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_2" height="71" width="161" y="80" x="207.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_3" height="16" width="41" y="175" x="303.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#BBBBBB"/>
+  <rect id="svg_4" height="16" width="41" y="105" x="267.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#999999"/>
+  <rect id="svg_6" height="16" width="41" y="175" x="231.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#BBBBBB"/>
+  <ellipse ry="25" rx="25" id="svg_7" cy="113" cx="287.799999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_8" y2="134.285555" x2="273.7909" y1="174.944849" x1="251.538178" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_10" y2="140.878954" x2="273.516175" y1="134.285555" x1="273.516175" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_11" y2="137.582254" x2="268.571126" y1="134.56028" x1="273.516175" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <path id="svg_15" d="m261.635121,274.849702l12.283675,-12.598626l36.851006,0l12.283716,12.598626l-12.283716,12.598669l-36.851006,0l-12.283675,-12.598669z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_16" y="278.74154" x="272.913087" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">Modem</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_17" y2="191.133322" x2="250.478335" y1="261.662224" x1="277.430452" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_18" y2="197.178656" x2="249.974557" y1="191.133322" x1="249.974557" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_19" y2="194.155989" x2="254.508558" y1="191.133322" x1="250.226446" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_20" y2="191.385211" x2="322.77046" y1="261.662224" x1="304.634457" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_21" y2="196.171101" x2="323.778016" y1="190.629544" x1="322.518571" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_22" y2="194.407878" x2="319.495904" y1="191.133322" x1="322.518571" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_23" y="236.06558" x="254.999999" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">1</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_24" y="236.885252" x="314.836065" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">3</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_25" y="162.295088" x="248.442622" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">2</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_26" y="120.491809" x="140.245901" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">User space</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_27" y="190.16394" x="128.770491" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">Kernel space</text>
+ </g>
+</svg>

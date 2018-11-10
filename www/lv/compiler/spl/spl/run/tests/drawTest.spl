@@ -1,0 +1,15 @@
+//
+// drawTest.spl -- draw two lines and some circles on the graphics screen
+//
+
+
+proc main() {
+  clearAll(0);
+  drawLine(0, 0, 639, 479, 0x00FFFFFF);
+  drawLine(0, 479, 639, 0, 0x00FFFFFF);
+  drawCircle(320, 240,  40, 0x00FFFFFF);
+  drawCircle(320, 240,  80, 0x00FFFFFF);
+  drawCircle(320, 240, 120, 0x00FFFFFF);
+  drawCircle(320, 240, 160, 0x00FFFFFF);
+  drawCircle(320, 240, 200, 0x00FFFFFF);
+}

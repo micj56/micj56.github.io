@@ -1,0 +1,76 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse ry="120" rx="120" id="svg_1" cy="246.5" cx="278.299999" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_3" y2="366.89164" x2="277.364894" y1="126.351465" x1="278.040569" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_4" y2="243.243179" x2="398.98633" y1="243.918854" x1="158.446156" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="329.05386" x2="365.202598" y1="158.783848" x1="193.581238" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_7" y2="159.459523" x2="362.499899" y1="326.351161" x1="188.17584" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_9" y2="291.216079" x2="389.526885" y1="196.621629" x1="169.25695" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_10" y2="352.026798" x2="223.310922" y1="134.459561" x1="323.31077" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_11" y2="288.513381" x2="164.527228" y1="199.324327" x1="388.175536" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="356.080846" x2="324.662119" y1="135.135236" x1="231.419018" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <ellipse ry="85" rx="85" id="svg_2" cy="246.5" cx="278.299999" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_14" y="172.973016" x="377.364743" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[2]</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_15" y="120.946067" x="287.500002" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[0]</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_16" y="139.864959" x="338.175612" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[1]</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_17" y="220.945918" x="401.689028" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[3]</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_18" y="273.648539" x="401.013353" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[4]</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_19" y="320.270091" x="382.770137" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[5]</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_20" y="355.405173" x="350.337755" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[6]</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_21" y="378.378111" x="298.986478" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[7]</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_22" y="378.378111" x="222.63524" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[8]</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_23" y="353.378149" x="169.25694" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[9]</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_24" y="315.540369" x="134.121858" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[10]</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_25" y="273.648542" x="118.581341" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[11]</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_26" y="217.567544" x="119.257016" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[12]</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_27" y="175.00004" x="138.175906" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[13]</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_28" y="139.189284" x="172.635312" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[14]</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_29" y="120.946068" x="229.391982" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff[15]</text>
+  <text style="cursor: move;" stroke="#000000" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_31" y="335.13493" x="334.121563" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">6</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_32" y="192.567581" x="358.445852" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">9</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_33" y="227.702663" x="373.986368" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">4</text>
+  <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_34" y="267.567466" x="376.689066" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">8</text>
+  <text style="cursor: move;" stroke="#000000" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_35" y="306.756595" x="361.148548" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">2</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_36" y="88.452725" x="115.059244" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">read = 2</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_37" y="89.918982" x="214.799308" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">write = 7</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_38" y2="195.606453" x2="347.514309" y1="211.791384" x1="305.895915" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_39" y2="329.710168" x2="294.335249" y1="293.872107" x1="293.179183" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <rect id="svg_58" height="25" width="25" y="29.062509" x="449.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_59" height="25" width="25" y="29.062509" x="74.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_60" height="25" width="25" y="29.062509" x="99.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_61" height="25" width="25" y="29.062509" x="124.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_62" height="25" width="25" y="29.062509" x="149.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_63" height="25" width="25" y="29.062509" x="174.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_64" height="25" width="25" y="29.062509" x="199.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_65" height="25" width="25" y="29.062509" x="224.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_66" height="25" width="25" y="29.062509" x="249.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_67" height="25" width="25" y="29.062509" x="274.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_68" height="25" width="25" y="29.062509" x="299.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_69" height="25" width="25" y="29.062509" x="324.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_70" height="25" width="25" y="29.062509" x="349.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_71" height="25" width="25" y="29.062509" x="374.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_72" height="25" width="25" y="29.062509" x="399.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <rect id="svg_73" height="25" width="25" y="29.062509" x="424.999958" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="#ffffff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_74" y="44.531389" x="42.578331" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">buff:</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_76" y="22.453981" x="84.437048" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">0</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_77" y="21.429081" x="109.604856" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">1</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_78" y="20.858896" x="131.411036" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">...</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_79" y="23.926381" x="455.33745" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">15</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_80" y="21.472393" x="432.638061" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">...</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_81" y="46.298235" x="133.825493" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">9</text>
+  <text style="cursor: move;" stroke="#000000" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_82" y="46.308722" x="234.496634" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">6</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_83" y="46.298969" x="159.328848" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">4</text>
+  <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_84" y="46.312392" x="184.161063" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">8</text>
+  <text style="cursor: move;" stroke="#000000" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_85" y="46.31019" x="210.33556" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">2</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_86" y="223.35205" x="257.341121" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">read = 2</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="12" id="svg_87" y="289.247841" x="263.121454" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000000" fill="#000000">write = 7</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_88" y2="73.303167" x2="137.737546" y1="53.393665" x1="137.737546" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_89" y2="77.375566" x2="238.190034" y1="53.846154" x1="238.190034" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+ </g>
+</svg>

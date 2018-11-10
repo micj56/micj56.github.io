@@ -1,0 +1,143 @@
+proc drawLine1(x0: int, y0: int, x1: int, y1: int, color: int) {
+  var x: int;
+  var y: int;
+  var dx: int;
+  var dy: int;
+  var e: int;
+  var b: int;
+  var m: int;
+
+  x := x0;
+  y := y0;
+  setPixel(x, y, color);
+  dx := x1 - x0;
+  dy := y1 - y0;
+  if (dx < 0) {
+    if (dy < 0) {
+      if (-dx < -dy) {
+        // x left, y up, major direction is y
+        e := -dy + 2 * dx;
+        b := -2 * dy;
+        m := 2 * dx;
+        while (y > y1) {
+          if (e <= 0) {
+            x := x - 1;
+            e := e + b;
+          }
+          y := y - 1;
+          e := e + m;
+          setPixel(x, y, color);
+        }
+      } else {
+        // x left, y up, major direction is x
+        e := -dx + 2 * dy;
+        b := -2 * dx;
+        m := 2 * dy;
+        while (x > x1) {
+          if (e <= 0) {
+            y := y - 1;
+            e := e + b;
+          }
+          x := x - 1;
+          e := e + m;
+          setPixel(x, y, color);
+        }
+      }
+    } else {
+      if (-dx < dy) {
+        // x left, y down, major direction is y
+        e := dy + 2 * dx;
+        b := 2 * dy;
+        m := 2 * dx;
+        while (y < y1) {
+          if (e < 0) {
+            x := x - 1;
+            e := e + b;
+          }
+          y := y + 1;
+          e := e + m;
+          setPixel(x, y, color);
+        }
+      } else {
+        // x left, y down, major direction is x
+        e := -dx - 2 * dy;
+        b := -2 * dx;
+        m := -2 * dy;
+        while (x > x1) {
+          if (e < 0) {
+            y := y + 1;
+            e := e + b;
+          }
+          x := x - 1;
+          e := e + m;
+          setPixel(x, y, color);
+        }
+      }
+    }
+  } else {
+    if (dy < 0) {
+      if (dx < -dy) {
+        // x right, y up, major direction is y
+        e := -dy - 2 * dx;
+        b := -2 * dy;
+        m := -2 * dx;
+        while (y > y1) {
+          if (e <= 0) {
+            x := x + 1;
+            e := e + b;
+          }
+          y := y - 1;
+          e := e + m;
+          setPixel(x, y, color);
+        }
+      } else {
+        // x right, y up, major direction is x
+        e := dx + 2 * dy;
+        b := 2 * dx;
+        m := 2 * dy;
+        while (x < x1) {
+          if (e <= 0) {
+            y := y - 1;
+            e := e + b;
+          }
+          x := x + 1;
+          e := e + m;
+          setPixel(x, y, color);
+        }
+      }
+    } else {
+      if (dx < dy) {
+        // x right, y down, major direction is y
+        e := dy - 2 * dx;
+        b := 2 * dy;
+        m := -2 * dx;
+        while (y < y1) {
+          if (e < 0) {
+            x := x + 1;
+            e := e + b;
+          }
+          y := y + 1;
+          e := e + m;
+          setPixel(x, y, color);
+        }
+      } else {
+        // x right, y down, major direction is x
+        e := dx - 2 * dy;
+        b := 2 * dx;
+        m := -2 * dy;
+        while (x < x1) {
+          if (e < 0) {
+            y := y + 1;
+            e := e + b;
+          }
+          x := x + 1;
+          e := e + m;
+          setPixel(x, y, color);
+        }
+      }
+    }
+  }
+}
+
+proc main() {
+}

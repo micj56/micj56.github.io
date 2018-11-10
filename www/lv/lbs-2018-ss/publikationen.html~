@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>Publikationen</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="title" content="Betriebssysteme" />
+    <meta name="author" content="Michael Jäger" />
+    <meta name="robots" content="index,nofollow" />
+    <meta name="revisit" content="after 7 days" />
+    <meta http-equiv="expires" content="8640" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="keywords" content="Publikationen" />
+
+    <link rel="stylesheet" style type="text/css" href="homepage/homepage.css " />
+    <script type="text/javascript" src="homepage/utils.js" > </script>
+</head>
+
+
+
+<body onload="homepageInit()" >
+
+<div id="pagehead">
+  <div id="pagehead1">
+       <div id="ph2name"> 
+         <a href="homepage/index.html">Prof. Dr. Michael Jäger</a><br/>
+       </div>
+  </div>
+  <div id="pagehead2">
+       <a href="http://isa.mni.thm.de">
+           Institut für SoftwareArchitektur </a>        <br/>
+       <a class="address" href="http://www.mni.thm.de" >Fachbereich MNI</a><br/>
+       <a href="http://www.thm.de">Technische Hochschule Mittelhessen</a>
+  </div>
+  <div id="rule"><hr/></div>
+</div>
+
+
+
+
+<div id="content">      
+
+<div id="teaserimage" style="left:470px;top:-28px"><img src="bilder/publications.png" alt="" width="160px"/></div>
+
+
+
+<h1>Publikationen zu MoCaInfo</h1>
+
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+<ul>
+  <li><p>
+  <em>Niklas Kroll, Michael Jäger, Sebastian Süß</em>
+  <p>
+  <strong>Context-aware Indoor-Outdoor Detection for Seamless Smartphone Positioning</strong>
+  <p>
+  The Eighth International Conference on Advanced Geographic Information Systems, Applications, and Services
+  (GEOProcessing 2016)
+    <br>
+    Venice, Italy, April 2016
+    <br>
+  [Paper to appear (pre-proceedings version available on request)]<br>
+  <a href=SeamlessIndoorOutdoorDetection.pdf> Download Pre-Proceedings Version</a>
+  <br>
+
+  <li><p>
+  <em>Michael Jäger, Sebastian Süß, Nils Becker</em>
+  <p>
+  <strong>Multi-Scheme Smartphone Localization with Auto-Adaptive Dead Reckoning</strong>
+  <p>
+  International Journal on Advances in Systems and Measurements <br>
+  issn1942-261x, vol. 8, no. 3 & 4, year 2015<br>
+  <a href=http://www.iariajournals.org/systems_and_measurements> Journal: http://www.iariajournals.org/systems_and_measurements </a><br>
+  Full paper in
+  <a href=http://www.thinkmind.org/index.php?view=article&articleid=sysmea_v8_n34_2015_9> 
+  Thinkmind Digital Library</a>
+  <br>
+
+  <li><p>
+  <em>Nils Becker, Michael Jäger, Sebastian Süß</em>
+  <p>
+  <strong>Indoor Smartphone Localization with Auto-Adaptive Dead Reckoning</strong>
+  <p>
+  International Conference on Systems - ICONS 2015,
+  Barcelona, Spain, April 2015
+  <br>
+  Full paper in <a href="http://www.thinkmind.org/index.php?view=article&articleid=icons_2015_7_40_40091">Thinkmind Digital Library</a>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+
+html * {
+  font-size:100.01%;
+}
+
+body { 
+       margin-left: 30px;
+       min-width: 200px;
+       max-width: 700px;
+     }
+
+div.lit {
+      color: #aa0000;
+      font-size: 9px%; 
+      line-height: 11px%; 
+  }
+
+* { 
+    font-family: verdana, lucida, helvetica, arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration:	none;
+    background: #ffffff; 
+    font-weight: medium;
+  }
+
+a:hover,.link:hover * {	
+	background:	#e0e0e0; /*mittelgrau*/
+	}	
+
+h1,h2,h3 { 
+     font-family: arial,verdana,lucida, helvetica,  sans-serif;
+     font-weight: medium;
+     font-variant: small-caps;
+     color: #383894;  /*blau*/
+     }
+
+h1 { 
+     font-family: verdana,lucida,arial,helvetica,sans-serif;
+     font-weight: 600;
+    font-variant: normal;
+      font-size: 26px; 
+     line-height: 34px;
+     margin-bottom: 30px; 
+   }
+
+h2 { 
+     margin-top: 35px;
+     font-size: 22px; 
+     line-height: 24px; 
+   }
+
+h3 { 
+     margin-top: 35px;
+     font-size: 20px; 
+     line-height: 22px; 
+   }
+
+h3.homepage 
+  {
+     color: #505050;  /*anthrazit*/
+   }
+
+p {
+	margin-top: 5px;
+	margin-bottom: 2px;
+	color: black;
+        font-weight: 500;
+  }
+
+ul {
+    color: grey;
+   }
+
+
+
+pre, tt {
+	font-family: courier;
+	font-size: 13px;
+	}
+
+.moddate { 
+	font-family: courier;
+	font-size: 11px;
+ }
+
+.email>ins:before {content: "@"; text-decoration: none}
+.email del {text-decoration: none}
+.email>del {display: none}
+*:first-child+html .email>del {display:inline}  /* Workaround fuer IE 7 */
+
+div#pagehead { 
+     position:relative;
+     height: 90px;
+     top:10px;
+}
+
+#rule {
+  position: absolute;
+  top:55px;
+  left: -6px;
+ }
+
+#rule > hr{ 
+  border-color: #383894;
+  background-color:#383894; 
+  width: 680px;
+  align:left;
+}
+
+div#pagehead1 * { 
+  font-family: verdana, lucida, helvetica, arial, sans-serif;
+  color: #383894;  
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  height: 50px;
+}
+
+div#pagehead2 { 
+     position:absolute;
+     top:0px;;
+     left: 420px;
+     width: 300px;
+}
+
+div#pagehead2 * { 
+     color: #383894;  
+     line-height: 16px;
+     font-size: 13px;
+     font-weight: 600;
+     font-family: verdana, lucida, helvetica, arial, sans-serif;
+}
+
+div#teaserimage { 
+  position:absolute;
+  left:550px;
+  top:-30px;
+  z-index:1;
+ }
+
+div#content { 
+  z-index:3;
+  position:relative;
+  top:30px;
+
+}	
+
+
+/* ------  Startpage -------------*/
+
+
+table#phone { 
+  border-spacing:0px;
+  border-top:0px;
+  border-bottom:0px;
+ }
+
+td.address{ 
+  padding:0px 10px 0px 0px;
+  margins:0px;
+ }
+
+
+#startpageheader { 
+     position:relative;
+     width: 800px;
+  height:160px;
+}
+
+
+#portrait {
+  position:absolute; 
+  top:200px; 
+  left:600px; 
+  width:40px;
+  z-index:1;
+}
+
+#portrait *{
+  border:10px;
+  border-color:blue; 
+}
+
+#address1 {  
+  position:absolute; 
+  top: 0px; 
+  left:0px;
+}
+
+
+#address2 {  
+  position:absolute; 
+  top:00px; 
+  left:420px;
+}
+
+.addressTitle, .addressTitle *{ 
+  font-family: verdana, lucida, helvetica, arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  height: 30px;
+  color: #505050;  
+}
+
+.addressContent, .addressContent *{ 
+  font-family: verdana, lucida, helvetica, arial, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #383894;  
+}
+
+
