@@ -1,8 +1,0 @@
-<Limit GET>
-order deny,allow
-deny  from all
-allow from 212.201 
-allow from 192.168
-allow from 10
-allow from 127.0.0.1
-</Limit>

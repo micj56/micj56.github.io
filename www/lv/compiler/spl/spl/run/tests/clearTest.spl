@@ -1,8 +1,0 @@
-//
-// clearTest.spl -- clear the graphics screen
-//
-
-
-proc main() {
-  clearAll(0x000000FF);
-}
